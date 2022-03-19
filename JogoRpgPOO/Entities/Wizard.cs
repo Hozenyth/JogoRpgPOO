@@ -13,7 +13,15 @@
 
         public string Attack2( int bonus)
         {
-            return Name + " " + "Lançou magia";
+            if(bonus > 6)
+            {
+                return Name + " " + "Lançou uma magia efetiva com bonus de: " + bonus;
+            }
+            else
+            {
+                return Name + " " + "Lançou uma magia efetiva com força fraca com bunos de :" + bonus;
+            }
+            
         }
     }
 }
